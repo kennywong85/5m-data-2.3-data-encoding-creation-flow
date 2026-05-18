@@ -14,6 +14,12 @@ This lesson introduces the various data encoding formats and modes of data flow.
 
 ---
 
+XML + REST API = basic “how data is written / sent over web” foundation.
+Thrift = older-ish structured message format + RPC idea.
+Protobuf = Google’s structured message format, very common in modern systems.
+Avro = schema-based format often used in big data / Kafka-ish pipelines.
+Parquet / ORC / Arrow = analytics/storage formats, more “big data table files” than “send one message between systems.”
+
 ## Part 1 - Data Encoding Formats
 
 - Part 1.0: Data Encoding Formats Overview  
