@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+// Define a Book message/data object
+// This is like saying: a Book has a title, author, and page_count
+message Book {
+    string title = 1;
+    string author = 2;
+    int32 page_count = 3;
+}
+
+// Define a Library service
+// This service has one remote method called checkoutBook
+service Library {
+    rpc checkoutBook(Book) returns (Book) {}
+}
